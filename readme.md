@@ -2,7 +2,7 @@
 ./build/test -filename.txt
 
 
-<h1>For building<1> 
+<h1>For building</h1> 
 cd ../build 
 cmake ..
 make
