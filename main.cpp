@@ -20,10 +20,14 @@ struct Object{
     double _creationTime;
 };
 
+// Structure for grouping
 struct Group{
     std::string _name;
     std::vector<Object> _objectListGroup;
 };
+
+
+// Main grouping class 
 class Groups{
     
     public:
@@ -57,6 +61,8 @@ class Groups{
         std::vector<Group> _groupList;
 };
 
+
+// A class that handles objects
 class objectList{
     public:
     
@@ -68,6 +74,9 @@ class objectList{
                 printf("%s %f %f %s %f\n", obj._name.c_str(), obj._x, obj._y, obj._type.c_str(), obj._creationTime);  
             }
         }
+        
+        
+        //Grouping has been included in this class in order to preserve the values of the original object
         Groups groupByDistance(){
             Groups groups;
 
@@ -102,6 +111,8 @@ class objectList{
 
             return groups;
         }
+        
+        //Group by first letter
         Groups groupByName(){
             Groups groups;
 
@@ -148,7 +159,6 @@ class objectList{
             }
             return groups;
         }
-
         Groups groupByType(){
             Groups groups;
             std::vector<std::string> typeGroup;
