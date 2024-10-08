@@ -13,6 +13,7 @@
 #include "Groups.h"
 #include "dbSql.h"
 
+// Group "Type" owerflow, when this value set 
 #define typeOferflowFlag 2
 
 
@@ -41,6 +42,8 @@ Object addObject() {
     std::cin >> newObj._type;
     return newObj;
 }
+
+// Grouping menu finction
 void groupChoise(objectList objList, std::string outputFileName){
 
     system("clear");

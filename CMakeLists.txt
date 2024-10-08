@@ -9,7 +9,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 include_directories(src/headers)
 find_package(SQLite3 REQUIRED)
 if(SQLite3_FOUND)
-    include_directories(${SQLite3_INCLUDE_DIRS}) # Добавляем директорию заголовков
+    include_directories(${SQLite3_INCLUDE_DIRS})
     message(STATUS "Found SQLite3: ${SQLite3_LIBRARIES}")
 else()
     message(FATAL_ERROR "SQLite3 not found")
