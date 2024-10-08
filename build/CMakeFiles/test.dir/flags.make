@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/miklel/Desktop/work/testovoye/src/headers
 
 CXX_FLAGS = -std=gnu++11
 

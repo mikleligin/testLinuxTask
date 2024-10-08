@@ -153,6 +153,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/code/Groups.o: src/code/Groups.cpp.o
+.PHONY : src/code/Groups.o
+
+# target to build an object file
+src/code/Groups.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/Groups.cpp.o
+.PHONY : src/code/Groups.cpp.o
+
+src/code/Groups.i: src/code/Groups.cpp.i
+.PHONY : src/code/Groups.i
+
+# target to preprocess a source file
+src/code/Groups.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/Groups.cpp.i
+.PHONY : src/code/Groups.cpp.i
+
+src/code/Groups.s: src/code/Groups.cpp.s
+.PHONY : src/code/Groups.s
+
+# target to generate assembly for a file
+src/code/Groups.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/Groups.cpp.s
+.PHONY : src/code/Groups.cpp.s
+
+src/code/objectList.o: src/code/objectList.cpp.o
+.PHONY : src/code/objectList.o
+
+# target to build an object file
+src/code/objectList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/objectList.cpp.o
+.PHONY : src/code/objectList.cpp.o
+
+src/code/objectList.i: src/code/objectList.cpp.i
+.PHONY : src/code/objectList.i
+
+# target to preprocess a source file
+src/code/objectList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/objectList.cpp.i
+.PHONY : src/code/objectList.cpp.i
+
+src/code/objectList.s: src/code/objectList.cpp.s
+.PHONY : src/code/objectList.s
+
+# target to generate assembly for a file
+src/code/objectList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/objectList.cpp.s
+.PHONY : src/code/objectList.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +213,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/code/Groups.o"
+	@echo "... src/code/Groups.i"
+	@echo "... src/code/Groups.s"
+	@echo "... src/code/objectList.o"
+	@echo "... src/code/objectList.i"
+	@echo "... src/code/objectList.s"
 .PHONY : help
 
 

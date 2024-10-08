@@ -1,5 +1,7 @@
-CMakeFiles/test.dir/main.cpp.o: \
- /home/miklel/Desktop/work/testovoye/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/test.dir/src/code/objectList.cpp.o: \
+ /home/miklel/Desktop/work/testovoye/src/code/objectList.cpp \
+ /usr/include/stdc-predef.h \
+ /home/miklel/Desktop/work/testovoye/src/headers/objectList.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -172,6 +174,5 @@ CMakeFiles/test.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
- /home/miklel/Desktop/work/testovoye/src/headers/objectList.h \
  /home/miklel/Desktop/work/testovoye/src/headers/structs.h \
  /home/miklel/Desktop/work/testovoye/src/headers/Groups.h
