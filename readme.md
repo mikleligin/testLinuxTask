@@ -11,4 +11,5 @@ sqlite3 test.db < setupDB.sql
 
 cd build
 cmake ..
+
 make
