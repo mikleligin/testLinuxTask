@@ -11,6 +11,8 @@
 #include <sstream>
 #include <structs.h>
 #include <Groups.h>
+#pragma once
+
 #define typeOferflowFlag 2
 
 

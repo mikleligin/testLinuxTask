@@ -11,6 +11,8 @@
 #include <sstream>
 #include "objectList.h"
 #include "Groups.h"
+#include "dbSql.h"
+
 #define typeOferflowFlag 2
 
 
@@ -124,7 +126,8 @@ int main(int argc, char* argv[]){
         std::cout << "2. Добавить объект\n";
         std::cout << "3. Группировка\n";
         std::cout << "4. Вывод всех объектов\n";
-        std::cout << "5. Выход\n";
+        std::cout << "5. Выгрузить из базы\n";
+        std::cout << "6. Выход\n";
         std::cin >> choice;
         switch (choice) {
             case 1:{
@@ -158,6 +161,19 @@ int main(int argc, char* argv[]){
                 break;
             }
             case 5:{
+                sqlite3* db;
+                dataBase sql;
+                int exit = sqlite3_open("../test.db", &db);
+                if (exit) {
+                    std::cerr << "Error open DB: " << sqlite3_errmsg(db) << std::endl;
+                    return exit;
+                }
+                std::cout << "\n\nУспешно выгружено из базы\n\n";
+                objList = sql.loadFromDatabase(db, "SELECT name, x, y, type, creation_time FROM objects;");
+                objList.printObjects();
+                break;
+            }
+            case 6:{
 
                 std::cout << "Выход из программы.\n";
                 break;
@@ -166,6 +182,6 @@ int main(int argc, char* argv[]){
                 std::cout << "Неверный выбор. Повторите попытку.\n";
         }
     }
-    while (choice != 5);
+    while (choice != 6);
     return 0;
 }

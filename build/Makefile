@@ -177,6 +177,30 @@ src/code/Groups.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/Groups.cpp.s
 .PHONY : src/code/Groups.cpp.s
 
+src/code/dbSql.o: src/code/dbSql.cpp.o
+.PHONY : src/code/dbSql.o
+
+# target to build an object file
+src/code/dbSql.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/dbSql.cpp.o
+.PHONY : src/code/dbSql.cpp.o
+
+src/code/dbSql.i: src/code/dbSql.cpp.i
+.PHONY : src/code/dbSql.i
+
+# target to preprocess a source file
+src/code/dbSql.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/dbSql.cpp.i
+.PHONY : src/code/dbSql.cpp.i
+
+src/code/dbSql.s: src/code/dbSql.cpp.s
+.PHONY : src/code/dbSql.s
+
+# target to generate assembly for a file
+src/code/dbSql.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/code/dbSql.cpp.s
+.PHONY : src/code/dbSql.cpp.s
+
 src/code/objectList.o: src/code/objectList.cpp.o
 .PHONY : src/code/objectList.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/code/Groups.o"
 	@echo "... src/code/Groups.i"
 	@echo "... src/code/Groups.s"
+	@echo "... src/code/dbSql.o"
+	@echo "... src/code/dbSql.i"
+	@echo "... src/code/dbSql.s"
 	@echo "... src/code/objectList.o"
 	@echo "... src/code/objectList.i"
 	@echo "... src/code/objectList.s"

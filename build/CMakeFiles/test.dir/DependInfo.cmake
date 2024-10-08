@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/miklel/Desktop/work/testovoye/main.cpp" "CMakeFiles/test.dir/main.cpp.o" "gcc" "CMakeFiles/test.dir/main.cpp.o.d"
   "/home/miklel/Desktop/work/testovoye/src/code/Groups.cpp" "CMakeFiles/test.dir/src/code/Groups.cpp.o" "gcc" "CMakeFiles/test.dir/src/code/Groups.cpp.o.d"
+  "/home/miklel/Desktop/work/testovoye/src/code/dbSql.cpp" "CMakeFiles/test.dir/src/code/dbSql.cpp.o" "gcc" "CMakeFiles/test.dir/src/code/dbSql.cpp.o.d"
   "/home/miklel/Desktop/work/testovoye/src/code/objectList.cpp" "CMakeFiles/test.dir/src/code/objectList.cpp.o" "gcc" "CMakeFiles/test.dir/src/code/objectList.cpp.o.d"
   )
 
