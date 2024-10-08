@@ -14,7 +14,7 @@ void Groups::printGroups(){
 }
 void Groups::saveToFile(const std::string filename)
 {
-    std::ofstream out(filename, std::ios::app);
+    std::ofstream out(filename);
     if (out.is_open())
     {
         for(Group& gr: _groupList){
