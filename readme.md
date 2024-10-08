@@ -5,7 +5,7 @@
 
 sudo apt-get install sqlite3
 
-sqlite3 test.db < setup_objects.sql
+sqlite3 test.db < setupDB.sql
 
 <h2>Build</h2>
 
